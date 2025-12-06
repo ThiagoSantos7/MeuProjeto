@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root{
+    --fundo: #e0ffff;
+    --primaria: #b4dadf;
+    --secundaria: #88b4bf;
+    --destaque: #306980;
+    --reserva: #5c8fa0;
+    --texto: #ffff;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secundaria);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.topbar{
+    padding: 3px 100px 3px;
+    text-align: end;
+    font-weight: 500;
+    color: var(--texto);
+    background-color: var(--destaque);
+}
+
+.mainbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+    background-color: var(--primaria);
+    
+}
+ .logo{
+    width: 100px;
+}
+
+.mainbar .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+.mainbar .navbar a{
+    color: var(--destaque);
+    font-weight: 600;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    transform: translateY(-2px);
+}
+.navbar a:active{
+    opacity: 0.3;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .05s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    height: 500px;
+    background-color: var(--fundo);
+    padding: 10px 0;
+}
+
+.text_about{
+    width: 40%;
+    color: var(--destaque);
+}
+
+.text_about h1{
+    margin: 5px;
+}
+
+.image-about{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 10px 4px 17px var(--secundaria);
+}
+
+.box-containers{
+    padding: 20px;
+    background-color: var(--fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-containers h1{
+    color: var(--destaque);
+}
+
+.containers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding: 70px;
+}
+
+
+.box img{
+    width: 280px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.box{
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--primaria);
+    border-radius: 10px;
+    box-shadow: 10px 4px 17px var(--secundaria);
+    padding-bottom: 10px;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.box p{
+    font-weight: 600;
+    width: 250px;
+}
+
+.box a{
+    background-color: var(--destaque);
+    color: var(--texto);
+    border-radius: 5px;
+    padding: 8px;
+    transition: 0.2s;
+}
+
+.img-box{
+    height: 280px;
+}
+
+.box a:hover{
+    transform: scale(1.1);
+}
+.box a:active{
+    opacity: 0.6;
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+}
+
+.nav-footer a{
+    color: var(--destaque);
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.nav-footer a:hover{
+    transform: translateY(-2px);
+}
+.nav-footer a:active{
+    opacity: 0.3;
+}
+
+.img-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img-footer img{
+    width: 200px;
+}
