@@ -693,7 +693,8 @@ footer{
 }
 
 @media (min-width: 1024px){
-    header{
+
+header{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -827,6 +828,7 @@ ul{
     color: var(--texto);
     border-radius: 5px;
     padding: 8px;
+    font-size: 15px;
     transition: 0.2s;
 }
 
