@@ -8,6 +8,7 @@
     <link rel="icon" type="image;png" href="./assets/iconTrip.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <title>Th Trips</title>
@@ -20,12 +21,21 @@
         </div>
 
         <div class="mainbar">
-            <div class="logo"><img class="logo" src="./assets/Logo.png" alt="Imagem logo"></div>
+            <div class="logo1"><img class="logo" src="./assets/Logo.png" alt="Imagem logo"></div>
             <nav class="navbar">
-                <a href="#">HOME</a>
-                <a href="#">SOBRE</a>
-                <a href="#">DESTAQUES</a>
-                <a href="#">CONTATO</a>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">SOBRE</a></li>
+                    <li class="menu-drop"><a href="#container">DESTAQUES <i class="bi bi-caret-down-fill"></i></a>
+                        <div class="drop">
+                            <a href="#container">Destinos</a>
+                            <a href="#container">Resorts</a>
+                            <a href="#container" class="drop_sub">Cruzeiros</a>
+                            <a href="#container">Promoções</a>
+                        </div>
+                    </li>
+                    <li><a href="https://site-portif-lio.vercel.app/" target="_blank">CONTATO</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -38,10 +48,10 @@
             <input type="radio" name="radio-btn" id="radio2">
 
             <div class="slide first">
-                <img src="./assets/viagem1.jpg" alt="imagem 1 viagem">
+                <img src="./assets/slide1.png" alt="imagem 1 viagem">
             </div>
             <div class="slide">
-                <img src="./assets/viagem2.jpg" alt="imagem 2 viagem">
+                <img src="./assets/slide2.png" alt="imagem 2 viagem">
             </div>
 
         </div>
@@ -54,7 +64,7 @@
     </section>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="text_about">
                 <h1>Sobre a TH. Trips</h1>
                 <h3>Sua Agência de Viagens Especializada em Experiências Inesquecíveis</h3><br>
@@ -80,7 +90,7 @@
             </div>
         </section>
 
-        <section class="box-containers">
+        <section class="box-containers" id="container">
             <h1>Em Destaque</h1>
             <div class="containers">
                 <div class="box">
@@ -110,9 +120,9 @@
     <footer>
         <nav class="nav-footer">
             <a href="#">HOME</a>
-            <a href="#">SOBRE</a>
-            <a href="#">DESTAQUES</a>
-            <a href="#">CONTATO</a>
+            <a href="#about">SOBRE</a>
+            <a href="#container">DESTAQUES</a>
+            <a href="https://site-portif-lio.vercel.app/" target="_blank">CONTATO</a>
         </nav>
 
         <div class="img-footer">
